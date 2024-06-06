@@ -11,7 +11,8 @@
     "lint:fix": "npm run lint -- --fix",
     "unit": "istanbul test _mocha --reporter=spec test/index.js",
     "test": "npm run lint && npm run unit",
-    "version": "grunt dist && git add dist/"
+    "version": "grunt dist && git add dist/",
+    "postinstall": "npx patch-package"
   },
   "repository": {
     "type": "git",
